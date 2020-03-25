@@ -1,43 +1,16 @@
-
-$(document).ready(function() {
-
-    var progressbar = $('#progressbar'),
-
-        max = progressbar.attr('max'),
-
-        time = (1000/max)*5,   
-
-        value = progressbar.val();
-
- 
-
-    var loading = function() {
-
-        value += 1;
-
-        addValue = progressbar.val(value);
-
+$(document).ready(function(){
          
-
-        $('.progress-value').html(value + '%');
-
- 
-
-        if (value == max) {
-
-            clearInterval(animate);                   
-
-        }
-
-    };
-
- 
-
-    var animate = setInterval(function() {
-
-        loading();
-
-    }, time);
-
-}
-
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+    $('.scrollup').fadeIn();
+    } else {
+    $('.scrollup').fadeOut();
+    }
+    });
+     
+    $('.scrollup').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+    });
+     
+    });

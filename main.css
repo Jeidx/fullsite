@@ -587,3 +587,23 @@ footer{
 .footer-link3{
     margin-left: 13px;
 }
+.scrollup{
+    margin: 0;
+    padding: 0;
+    width:90px;
+    height:90px;
+    opacity:0.3;
+    position:fixed;
+    bottom:30%;
+    right:40%;
+    display:none;
+    text-indent:-9999px;
+    background: url(http://webmastermix.ru/files/demo/creation-site/raznoe/knopka-vverh/icon_top.png) no-repeat;
+}
+.scrollup:hover{
+    opacity:0.8;
+    transition:0.8s;
+}
+.scrollup:not(:hover){
+    transition:0.8s;
+}
