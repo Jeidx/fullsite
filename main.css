@@ -59,10 +59,15 @@ body{
     line-height: 26px;
     letter-spacing: 0.1em;
     color: #000000;
-   
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
 }
-.header-nav-item:first-child {
-    font-weight: 500;
+.header-nav-item a {
+    text-decoration: none;
+    color: #000000;
+}
+.header-nav-item a:hover{
     color: #34547A;
 }
 .header-main{
@@ -143,6 +148,19 @@ body{
     text-align: center;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+    background-color: #34547A;
+    grid-column: 1/1;
+    grid-row: 6/7;
+    width: 225px;
+    height: 65px;
+    text-decoration: none;
+}
+.header-main-button:hover{
+    background-color: #0F0E26;
+    transition:0.8s;
+}
+.header-main-button:not(:hover){
+    transition:0.8s;
 }
 
         /* 2ЧАСТЬ */
@@ -542,7 +560,7 @@ footer{
     padding: 0;
 }
 .footer-text{
-    grid-column:2/3;
+    grid-column:2/4;
     grid-row: 3/4;
     font-family: Roboto;
     font-style: normal;
